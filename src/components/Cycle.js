@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Cycle() {
+function Cycle(props) {
+  
   return (
     <div>
-      Cycle
+      cycle
     </div>
   );
 }

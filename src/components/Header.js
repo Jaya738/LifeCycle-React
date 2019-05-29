@@ -4,8 +4,7 @@ function Header() {
 
   return (
     <div> 
-        
-      Header
+        <h1>Life Cycle of SilkWorm</h1>
     </div>
   );
 }
