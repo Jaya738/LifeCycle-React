@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Description() {
+function Description(props) {
   return (
     <div>
-      Description
+       <center><p style={{fontStyle:"bold",fontSize:"35px",color:"white"}}>{props.stage.label}</p></center>
+      <p style={{color:"white"}}>{props.stage.description}</p>
     </div>
   );
 }
