@@ -4,6 +4,7 @@ import Description from './Description';
 import Cycle from './Cycle';
 import { Container, Row, Col } from 'react-grid-system';
 import {Button,ButtonGroup,ButtonToolbar } from 'reactstrap';
+import worm from './images/wormf.gif';
 class Main extends Component{
     constructor(props){
       super(props);
@@ -141,10 +142,13 @@ class Main extends Component{
 
   render(){
       return (
-    <div style={{padding:"20px",background:"black"}}>
-      <Row style={{color:"white",background:"#011f4b",justifyContent:"center",padding:"20px",fontStyle:"bold"}}>
+    <div style={{padding:"20px",background:"#b3cde0"}}>
+      <Row style={{color:"white",background:"#011f4b",justifyContent:"center",padding:"20px"}}>
+      
+        {/* <marquee><img src={worm} style={{height:"50px"}}/></marquee>  */}
         <div> 
-            <a href="#" style={{textDecoration:"none",color:"white",fontFamily:"timeburner",fontSize:"40px"}} onClick = {() => this.Stage0()}><h1>LIFE CYCLE OF SILKWORM</h1></a>
+            {/* <marquee direction="right"><img src={worm} style={{height:"50px"}}/></marquee> */}
+            <center><a href="#" style={{textDecoration:"none",color:"white",fontFamily:"timeburner",fontSize:"40px"}} onClick = {() => this.Stage0()}><h1 style={{fontWeight:"bold"}}>LIFE CYCLE OF SILKWORM</h1></a></center>
          </div> 
                   
       </Row>
@@ -165,7 +169,7 @@ class Main extends Component{
           <Col md={8} style={{background:"#b3cde0",padding:"15px"}}>
              <div>
         <ButtonToolbar>
-          <ButtonGroup style={{height:"88px",width:"1292px"}}>
+          <ButtonGroup style={{height:"88px",width:"1292px",fontFamily:"timeburner"}}>
             <Button color="primary" onClick = {() => this.Stage1()}> <p style={{fontSize:"200%"}}>Egg</p></Button>
             <Button color="primary" onClick = {() => this.Stage2()}> <p style={{fontSize:"200%"}}>Larva</p></Button>
             <Button color="primary" onClick = {() => this.Stage3()}> <p style={{fontSize:"200%"}}>Pupa</p> </Button>
